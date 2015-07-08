@@ -54,3 +54,12 @@ together with an example of usage.  Ready to use examples of usage are in the
 
 Other files in the ``ex`` directory are original examples of usage of various
 routines (single and double precision), but are not compiled by default.
+
+Selecting the Fortran compiler in cmake
+---------------------------------------
+In order to compile with the Intel fortran compiler (ifort), simply start a clean
+build, setting the environment variable FC to the desired compiler when calling cmake:
+
+mkdir build
+cd build
+FC=ifort cmake ..
